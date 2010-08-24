@@ -34,6 +34,7 @@ GEM
     columnize (0.3.1)
     compass (0.10.4)
       haml (>= 3.0.4)
+    diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     haml (3.0.16)
@@ -45,6 +46,7 @@ GEM
       treetop (>= 1.4.5)
     metaid (1.0)
     mime-types (1.16)
+    nokogiri (1.4.3.1)
     open4 (0.9.6)
     polyglot (0.3.1)
     rack (1.2.1)
@@ -70,6 +72,17 @@ GEM
     rake-remote_task (2.0.1)
       open4 (~> 0.9.0)
       rake (~> 0.8.0)
+    rspec (2.0.0.beta.17)
+      rspec-core (= 2.0.0.beta.17)
+      rspec-expectations (= 2.0.0.beta.17)
+      rspec-mocks (= 2.0.0.beta.17)
+    rspec-core (2.0.0.beta.17)
+    rspec-expectations (2.0.0.beta.17)
+      diff-lcs (>= 1.1.2)
+    rspec-mocks (2.0.0.beta.17)
+    rspec-rails (2.0.0.beta.17)
+      rspec (>= 2.0.0.beta.14)
+      webrat (>= 0.7.0)
     ruby-debug (0.10.3)
       columnize (>= 0.1)
       ruby-debug-base (~> 0.10.3.0)
@@ -85,6 +98,10 @@ GEM
       rake (~> 0.8.0)
       rake-remote_task (~> 2.0)
     vlad-git (2.1.0)
+    webrat (0.7.1)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
 
 PLATFORMS
   ruby
@@ -95,6 +112,7 @@ DEPENDENCIES
   metaid (>= 1.0)
   rails (>= 3.0.0.rc)
   rails3-generators
+  rspec-rails (>= 2.0.0.beta)
   ruby-debug
   sqlite3-ruby
   vlad (>= 2.1.0)
