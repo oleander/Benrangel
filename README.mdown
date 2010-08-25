@@ -1,0 +1,10 @@
+What is Benrangel?
+==================
+Benrangel is a Rails v3 application skeleton, pre-filled with gems and common functionality used throughout many of my projects.
+
+How to use
+----------
+1. Clone: `git clone -o benrangel git://github.com/Burgestrand/Benrangel.git`
+2. Install dependencies: `bundle install`
+3. Rename: `rake app:rename NAME=newname`
+4. You are done. Configure the application further and hack away.
