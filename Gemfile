@@ -18,6 +18,4 @@ group :development do
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'rails3-generators'
   gem 'ruby-debug'
-  gem 'vlad', '>= 2.1.0'
-  gem 'vlad-git', '>= 2.1.0'
 end
