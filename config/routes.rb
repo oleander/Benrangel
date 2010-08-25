@@ -1,4 +1,7 @@
 Partyfy::Application.routes.draw do
+  match '/*path' => 'static#view', :as => :static
+  root :to => 'static#view'
+
   # Sample resource route with options:
   #   resources :products do
   #     member do
@@ -31,8 +34,4 @@ Partyfy::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => "welcome#index"
 end
