@@ -1,6 +1,12 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   
+  helper_method :title
+  def title(title = nil)
+    @title = title if title
+    @title
+  end
+  
   private
     def render(code, args = {}, &block)
       return super unless code.is_a? Fixnum
