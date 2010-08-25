@@ -10,11 +10,8 @@ group :production do
   
 end
 
-group :test do
-  gem 'rspec-rails', '>= 2.0.0.beta'
-end
-
 group :development do
+  gem 'rspec-rails', '>= 2.0.0.beta'
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'rails3-generators'
   gem 'ruby-debug'
