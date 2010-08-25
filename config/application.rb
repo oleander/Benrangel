@@ -26,5 +26,10 @@ module Partyfy
     
     # Activate observers that should always be running.
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
+    
+    # Remove trailing slashes from URLs
+    config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
+      r301 %r{\A/(.*)/\z}, '/$1'
+    end
   end
 end
