@@ -13,7 +13,7 @@ module ApplicationHelper
   #
   # @param Symbol name
   # @return Empty string
-  def clear(name)
+  def clear_content(name)
     content_for name.to_sym, 0.chr
   end
 end
