@@ -1,4 +1,4 @@
-Partyfy::Application.configure do
+Benrangel::Application.configure do
   # Code is reloaded on every request
   config.cache_classes = false
 

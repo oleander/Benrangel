@@ -1,11 +1,11 @@
 # Load Haml and Sass.
 Haml.init_rails(binding) if defined?(Haml)
 
-Partyfy::Application.configure do
+Benrangel::Application.configure do
   config.generators do |g|
     g.template_engine :haml
   end
-end if defined? Partyfy::Application
+end if defined? Benrangel::Application
 
 Haml::Template.options.merge!({
   :format => :html5, 

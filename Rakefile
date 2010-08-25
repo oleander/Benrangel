@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Partyfy::Application.load_tasks
+Benrangel::Application.load_tasks

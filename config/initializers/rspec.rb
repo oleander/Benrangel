@@ -1,6 +1,6 @@
-Partyfy::Application.configure do
+Benrangel::Application.configure do
   config.generators do |g|
     g.integration_tool :rspec
     g.test_framework   :rspec
   end
-end if defined? Partyfy::Application
+end if defined? Benrangel::Application
