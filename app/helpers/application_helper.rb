@@ -8,4 +8,12 @@ module ApplicationHelper
   def yield_default(symbol, *default)
     content_for?(symbol) ? content_for(symbol) : render(*default)
   end
+  
+  # Adds some empty content to a content_for symbol.
+  #
+  # @param Symbol name
+  # @return Empty string
+  def clear(name)
+    content_for name.to_sym, 0.chr
+  end
 end
