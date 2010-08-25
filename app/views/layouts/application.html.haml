@@ -5,4 +5,6 @@
     = stylesheet_link_tag :all
     = javascript_include_tag :defaults
     = csrf_meta_tag
-  %body= yield
+  %body
+    .header= yield_default :header, 'shared/header'
+    .section.body= yield
