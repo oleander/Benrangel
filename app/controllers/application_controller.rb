@@ -7,9 +7,9 @@ class ApplicationController < ActionController::Base
     @title
   end
   
-  private
-    def render(code, args = {}, &block)
-      return super unless code.is_a? Fixnum
-      super(:"http/#{code}", args.merge(:status => code), &block)
-    end
+  helper_method :render
+  def render(code, args = {}, &block)
+    return super unless code.is_a? Fixnum
+    super(:"http/#{code}", args.merge(:status => code), &block)
+  end
 end
