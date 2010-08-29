@@ -68,6 +68,7 @@ GEM
       rake (>= 0.8.3)
       thor (~> 0.14.0)
     rake (0.8.7)
+    rcov (0.9.8)
     rspec (2.0.0.beta.20)
       rspec-core (= 2.0.0.beta.20)
       rspec-expectations (= 2.0.0.beta.20)
@@ -99,6 +100,7 @@ DEPENDENCIES
   rack-rewrite (~> 1.0.0)
   rails (>= 3.0.0.rc)
   rails3-generators
+  rcov
   rspec-rails (>= 2.0.0.beta.20)
   ruby-debug
   sqlite3-ruby

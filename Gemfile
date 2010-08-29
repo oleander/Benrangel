@@ -11,6 +11,7 @@ group :production do
 end
 
 group :development do
+  gem 'rcov'
   gem 'rspec-rails', '>= 2.0.0.beta.20'
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'rails3-generators'
