@@ -1,13 +1,13 @@
 require 'spec_helper'
 
 describe ApplicationHelper do
+  before :each do
+    view.view_paths = ActionView::FixtureResolver.new({
+      'shared/_bogus.html.haml' => 'bogus'
+    })
+  end
+
   describe "#yield_default" do
-    before :each do
-      view.view_paths = ActionView::FixtureResolver.new({
-        'shared/_bogus.html.haml' => 'bogus'
-      })
-    end
-    
     it "renders a default view without content" do
       helper.yield_default(:header, :partial => 'shared/bogus').should match 'bogus'
     end
