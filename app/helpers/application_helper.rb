@@ -16,4 +16,14 @@ module ApplicationHelper
   def content_clear(symbol)
     @_content_for.delete(symbol)
   end
+  
+  # Sets the content at +identifier+ to a NULL-byte (essentially empty, but not blank?)
+  #
+  # @param Symbol symbol
+  # @return Previous content
+  def empty_content_for(symbol)
+    content = content_clear(symbol)
+    content_for symbol, 0.chr
+    return content
+  end
 end
