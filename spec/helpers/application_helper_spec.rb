@@ -17,4 +17,14 @@ describe ApplicationHelper do
       helper.yield_default(:header, :partial => 'shared/bogus').should match 'not bogus'
     end
   end
+  
+  describe "#content_clear" do
+    it "clears the content_for(:symbol) content" do
+      helper.content_for :header, 'i have content'
+      helper.content_for(:header).should == 'i have content'
+      helper.content_clear :header
+      helper.content_for(:header).should == ''
+    end
+  end
+  
 end
