@@ -27,4 +27,12 @@ describe ApplicationHelper do
     end
   end
   
+  describe "#empty_content_for" do
+    it "sets an empty content_for(:symbol)" do
+      helper.content_for :header, 'i have content'
+      helper.content_for(:header).should == 'i have content'
+      helper.empty_content_for(:header)
+      helper.content_for(:header).should == 0.chr
+    end
+  end
 end
