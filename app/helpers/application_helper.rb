@@ -9,11 +9,11 @@ module ApplicationHelper
     content_for?(symbol) ? content_for(symbol) : render(*default)
   end
   
-  # Adds some empty content to a content_for symbol.
+  # Clears the content at identifier +symbol+
   #
-  # @param Symbol name
-  # @return Empty string
-  def clear_content(name)
-    content_for name.to_sym, 0.chr
+  # @param Symbol symbol
+  # @return Previous content
+  def content_clear(symbol)
+    @_content_for.delete(symbol)
   end
 end
