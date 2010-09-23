@@ -1,0 +1,6 @@
+[submodule "public/javascripts/vendor/jquery-textchange"]
+	path = public/javascripts/vendor/jquery-textchange
+	url = git://gist.github.com/424774.git
+[submodule "vendor/jquery-textchange"]
+	path = vendor/jquery-textchange
+	url = git://gist.github.com/424774.git
