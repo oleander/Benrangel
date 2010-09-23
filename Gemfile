@@ -9,6 +9,8 @@ gem 'compass', '~> 0.10.5'
 gem 'barista', '~> 0.5.0'
 
 group :development do
+  gem 'barista_growl'
+
   gem 'rspec-rails', '~> 2.0.0.beta.22'
   gem 'rcov'
   

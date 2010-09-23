@@ -32,6 +32,9 @@ GEM
       activesupport (~> 3.0.0)
     barista (0.5.1)
       open4
+    barista_growl (0.1.0)
+      barista
+      growl
     builder (2.1.2)
     columnize (0.3.1)
     compass (0.10.5)
@@ -39,6 +42,7 @@ GEM
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    growl (1.0.3)
     haml (3.0.18)
     i18n (0.4.1)
     linecache (0.43)
@@ -99,6 +103,7 @@ PLATFORMS
 
 DEPENDENCIES
   barista (~> 0.5.0)
+  barista_growl
   compass (~> 0.10.5)
   haml (~> 3.0.18)
   metaid (~> 1.0)
