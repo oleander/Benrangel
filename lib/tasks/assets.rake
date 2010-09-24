@@ -1,5 +1,8 @@
-desc "Compiles CoffeeScript using Barrista"
-task 'coffee:compile' => ['barista:brew']
+desc "Compiles CoffeeScript using Barrista (but only if they changed)"
+task 'coffee:compile' => :environment do
+  abort "'#{Barista::Compiler.bin_path}' is unavailable." unless Barista::Compiler.available?
+  Barista.compile_all! false, false
+end
 
 desc "Compiles SASS using Compass"
 task 'sass:compile' do
