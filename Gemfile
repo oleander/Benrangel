@@ -20,4 +20,7 @@ group :development do
   
   gem 'rspec-rails', '~> 2.0.0.beta.22'
   gem 'ruby-debug19'
+  
+  gem 'vlad'
+  gem 'vlad-git', '~> 2.2.0'
 end
