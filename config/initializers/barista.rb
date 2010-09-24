@@ -5,7 +5,7 @@ Barista.configure do |c|
   # c.root = Rails.root.join("app", "scripts")
   
   # Change the output root, causing Barista to compile into public/coffeescripts
-  c.output_root = Rails.root.join("public", "javascripts", "coffee")
+  c.output_root = Rails.root.join("public", "javascripts", "compiled")
   
   # Disable wrapping in a closure:
   # c.no_wrap = true

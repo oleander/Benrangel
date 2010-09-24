@@ -2,9 +2,9 @@
 %html
   %head
     %title= title
-    = include_stylesheets :common, :compiled, :media => 'all'
+    = include_stylesheets :vendor, :compiled, :media => 'all'
     = include_jquery
-    = include_javascripts :vendor, :common, :coffee
+    = include_javascripts :vendor, :compiled
     = csrf_meta_tag
   %body
     .header= yield_default :header, 'shared/header'

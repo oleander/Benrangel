@@ -1,16 +1,13 @@
 stylesheets:
-  common:
-    - public/stylesheets/common/*.css
+  vendor:
+    - public/vendor/**/*.css
   
   compiled:
     - public/stylesheets/compiled/*.css
 
 javascripts:
   vendor:
-    - public/javascripts/vendor/*.js
+    - public/vendor/**/*.js
   
-  common:
-    - public/javascripts/common/*.js
-  
-  coffee:
-    - public/javascripts/coffee/*.js
+  compiled:
+    - public/javascripts/compiled/*.js
