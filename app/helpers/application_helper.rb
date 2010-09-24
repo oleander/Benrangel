@@ -26,4 +26,10 @@ module ApplicationHelper
     content_for symbol, 0.chr
     return content
   end
+  
+  # Includes jQuery by CDN or local depending on environment
+  def include_jquery
+    src = Rails.env.production?? 'http://code.jquery.com/jquery-1.4.2.min.js' : 'dev/jquery-1.4.2.min.js'
+    javascript_include_tag src
+  end
 end
