@@ -13,7 +13,7 @@ begin
     
     desc "Compile, compress and bundle assets"
     remote_task :update, :roles => :app do
-      run "cd #{current_path} && #{rake_cmd} assets"
+      run "cd #{current_path} && #{rake_cmd} RAILS_ENV=#{rails_env} assets"
     end
   end
 rescue LoadError
