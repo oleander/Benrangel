@@ -1,3 +1,6 @@
 [submodule "public/vendor/jquery-textchange"]
 	path = public/vendor/jquery-textchange
 	url = git://gist.github.com/424774.git
+[submodule "public/vendor/facebox"]
+	path = public/vendor/facebox
+	url = git://github.com/Burgestrand/facebox.git
