@@ -1,10 +1,9 @@
 What is Benrangel?
 ==================
-Benrangel is a Rails v3 application skeleton, pre-filled with gems and common functionality used throughout many of my projects.
+Benrangel is a Rails v3 application skeleton, pre-filled with gems and common functionality used throughout many of my projects. It is not an application template (although I wish it would become one).
 
-How to use
-----------
-1. Clone: `git clone -o benrangel git://github.com/Burgestrand/Benrangel.git`
-2. Install dependencies: `bundle install`
-3. Rename: `rake app:rename NAME=newname`
-4. You are done. Configure the application further and hack away.
+Assets
+------
+HAML, SASS, Compass and CoffeeScript are all included. They are served from `app/stylesheets` and `app/coffeescripts` respectively. In development they are compiled on-the-fly on every request. 
+
+For prodution they are automatically compiled and then bundled using Jammit when using `vlad:deploy`. Assets are shared with previous deployments, exploiting client cache to only redownload if the files have changed.
