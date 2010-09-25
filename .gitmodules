@@ -4,3 +4,6 @@
 [submodule "public/vendor/jquery-textchange"]
 	path = public/vendor/jquery-textchange
 	url = git://gist.github.com/424774.git
+[submodule "public/vendor/jquery-metadata"]
+	path = public/vendor/jquery-metadata
+	url = git://github.com/jquery/jquery-metadata.git
