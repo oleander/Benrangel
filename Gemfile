@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails', '~> 3.0.0'
-gem 'rack-rewrite', '~> 1.0.0'
 gem 'metaid', '~> 1.0'
 gem 'haml', '~> 3.0.18'
 
@@ -9,6 +8,10 @@ gem 'haml', '~> 3.0.18'
 gem 'compass', '~> 0.10.5'
 gem 'barista', '~> 0.5.0'
 gem 'jammit', '~> 0.5.3'
+
+# Rack stuff!
+gem 'rack-rewrite', '~> 1.0.0'
+gem 'rack-cache', '~> 0.5.3', :require => 'rack/cache'
 
 group :test do
   gem 'cover_me', '~> 1.0.0', :require => false

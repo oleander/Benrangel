@@ -27,9 +27,21 @@ module Benrangel
     # Activate observers that should always be running.
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
     
+    # Assume threadsafe operations
+    config.threadsafe!
+    
     # Remove trailing slashes from URLs
-    config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
+    # Note: put it as high as possible, so we don’t process unnecessary requests
+    config.middleware.insert_before(ActionDispatch::Static, Rack::Rewrite) do
       r301 %r{\A/(.*)/\z}, '/$1'
     end
+    
+    # Cache handler etags/if-modified-since
+    # Note: put as high as possible (but after redirects) so cache hits early
+    config.middleware.insert_after(Rack::Rewrite, Rack::Cache, {
+      :verbose => true,
+      :metastore => 'file:tmp/rack-cache/meta',
+      :entitystore => 'file:tmp/rack-cache/body'
+    })
   end
 end
