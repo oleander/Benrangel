@@ -32,7 +32,7 @@ module Benrangel
     
     # Remove trailing slashes from URLs
     # Note: put it as high as possible, so we don’t process unnecessary requests
-    config.middleware.insert_before(ActionDispatch::Static, Rack::Rewrite) do
+    config.middleware.insert 0, Rack::Rewrite do
       r301 %r{\A/(.*)/\z}, '/$1'
     end
     
