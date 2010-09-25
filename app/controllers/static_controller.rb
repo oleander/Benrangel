@@ -3,7 +3,7 @@ class StaticController < ApplicationController
     if template_exists?(template = File.join('static', params.fetch(:path, 'index')))
       render :file => template, :layout => ! request.xhr?
     else
-      render 404
+      render_code 404
     end
   end
 end

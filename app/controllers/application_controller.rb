@@ -2,13 +2,22 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   
   helper_method :title
+  
+  # Get (and possibly set) the site title.
+  #
+  # @param [nil, #to_s] title (default: nil)
+  # @return #to_s
   def title(title = nil)
     @title = title if title
     @title
   end
   
-  def render(code, args = {}, &block)
-    return super unless code.is_a? Fixnum
-    super(:"http/#{code}", args.merge(:status => code), &block)
+  # Renders a status code template (with the correct HTTP status code).
+  #
+  # @param Fixnum code
+  # @param Hash args (default: {})
+  # @return String
+  def render_code(code, args = {}, &block)
+    render :"http/#{code}", args.merge(:status => code), &block
   end
 end
