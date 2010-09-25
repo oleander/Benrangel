@@ -1,13 +1,13 @@
 stylesheets:
   vendor:
-    - public/vendor/**/*.css
+    - public/vendor/*/*.css
   
   compiled:
     - public/stylesheets/compiled/*.css
 
 javascripts:
   vendor:
-    - public/vendor/**/*.js
+    - public/vendor/*/*.js
   
   compiled:
     - public/javascripts/compiled/*.js
