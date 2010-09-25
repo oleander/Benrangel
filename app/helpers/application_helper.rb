@@ -30,8 +30,8 @@ module ApplicationHelper
   # Includes jQuery by CDN or local depending on environment
   #
   # @return String
-  def include_jquery
-    src = Rails.env.production?? 'http://code.jquery.com/jquery-1.4.2.min.js' : 'dev/jquery-1.4.2.min.js'
-    javascript_include_tag src
+  def include_jquery(version = '1.4.2')
+    prefix = Rails.env.development?? 'dev/' : 'http://code.jquery.com/'
+    javascript_include_tag [prefix, 'jquery-', version, '.min.js'].join
   end
 end

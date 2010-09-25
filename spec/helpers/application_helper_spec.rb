@@ -35,4 +35,13 @@ describe ApplicationHelper do
       helper.content_for(:header).should == 0.chr
     end
   end
+  
+  describe "#include_jquery" do
+    it "returns a local file in development only" do
+      Rails.env.stub!(:development?).and_return(true)
+      helper.include_jquery.should_not match 'code.jquery.com'
+      Rails.env.stub!(:development?).and_return(false)
+      helper.include_jquery.should match 'code.jquery.com'
+    end
+  end
 end
