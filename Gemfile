@@ -5,6 +5,8 @@ gem 'transitions', '~> 0.0.9', :require => ['transitions', 'active_record/transi
 gem 'metaid', '~> 1.0'
 gem 'haml', '~> 3.0.18'
 
+gem 'sqlite3-ruby', :require => 'sqlite3'
+
 # Required in production for compilation rake tasks!
 gem 'compass', '~> 0.10.5'
 gem 'barista', '~> 0.5.0'
@@ -19,7 +21,6 @@ group :test do
 end
 
 group :development do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'barista_growl'
   
   gem 'rspec-rails', '~> 2.0.0.beta.22'
