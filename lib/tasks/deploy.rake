@@ -6,6 +6,11 @@ begin
     desc "Deploy by updating, migrating and restarting"
     task :deploy => [:update, :migrate, :start_app]
     
+    desc "Trust the rvmrc file"
+    remote_task :update, :roles => :app do
+      run "rvm rvmrc trust #{current_path}"
+    end
+    
     desc "Install Bundler gems"
     remote_task :update, :roles => :app do
       run "cd #{current_path} && #{bundler_cmd}"
