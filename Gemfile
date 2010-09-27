@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '~> 3.0.0'
+gem 'transitions', '~> 0.0.9', :require => ['transitions', 'active_record/transitions']
 gem 'metaid', '~> 1.0'
 gem 'haml', '~> 3.0.18'
 
