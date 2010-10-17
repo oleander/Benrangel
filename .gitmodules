@@ -10,3 +10,6 @@
 [submodule "vendor/plugins/rake_assets/lib/tasks"]
 	path = vendor/plugins/rake_assets/lib/tasks
 	url = git://gist.github.com/613114.git
+[submodule "vendor/plugins/vlad_deploy/lib/tasks"]
+	path = vendor/plugins/vlad_deploy/lib/tasks
+	url = git@gist.github.com:7d52cb288afb3d29f07a.git
