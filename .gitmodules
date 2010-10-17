@@ -7,3 +7,6 @@
 [submodule "public/vendor/jquery-metadata"]
 	path = public/vendor/jquery-metadata
 	url = git://github.com/jquery/jquery-metadata.git
+[submodule "vendor/plugins/rake_assets/lib/tasks"]
+	path = vendor/plugins/rake_assets/lib/tasks
+	url = git://gist.github.com/613114.git
