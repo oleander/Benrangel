@@ -1,13 +1,10 @@
+package_assets: yes
+javascript_compressor: yui
+
 stylesheets:
-  vendor:
-    - public/vendor/*/*.css
-  
-  compiled:
-    - public/stylesheets/compiled/*.css
+  common:
+    - public/stylesheets/vendor/*.css
 
 javascripts:
-  vendor:
-    - public/vendor/*/*.js
-  
-  compiled:
-    - public/javascripts/compiled/*.js
+  common:
+    - public/javascripts/vendor/*.js

@@ -3,9 +3,8 @@
   %head
     %title= title
     = javascript_include_tag 'head.0.5.min'
-    = include_stylesheets :vendor, :compiled, :media => 'all'
-    = include_jquery
-    = include_javascripts :vendor, :compiled
+    = include_stylesheets :common
+    = include_javascripts_using_head_js
     = csrf_meta_tag
   %body
     .header= yield_default :header, 'shared/header'
