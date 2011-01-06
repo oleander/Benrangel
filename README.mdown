@@ -11,3 +11,5 @@ For prodution they are automatically compiled and then bundled using Jammit when
 Includes
 -------
   * [HAML scaffolding generator](https://github.com/mbleigh/haml-rails)
+  * [rails.js for jQuery](https://github.com/rails/jquery-ujs/raw/master/src/rails.js)
+  * [simple_form](https://github.com/plataformatec/simple_form)
