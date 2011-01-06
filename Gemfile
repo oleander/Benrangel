@@ -24,6 +24,10 @@ end
 # https://github.com/plataformatec/simple_form
 gem "simple_form"
 
+# A gem to automate using jQuery with Rails 3
+# https://github.com/indirect/jquery-rails
+gem "jquery-rails"
+
 group :development do
   gem 'barista_growl'
   gem 'rspec-rails', '~> 2.0.0.beta.22'
