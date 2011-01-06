@@ -35,4 +35,8 @@ group :development do
   gem 'vlad-git', '~> 2.2.0'
   gem 'vlad-nginx', '~> 1'
   gem 'ruby-debug'
+  
+  # A simple theme for web apps
+  # https://github.com/pilu/web-app-theme
+  gem 'web-app-theme', '>= 0.6.2'
 end

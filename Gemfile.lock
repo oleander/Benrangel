@@ -124,6 +124,7 @@ GEM
       vlad (>= 2.1.0)
     vlad-nginx (1.0.0)
       vlad (~> 2)
+    web-app-theme (0.6.2)
     yamler (0.1.0)
     yui-compressor (0.9.1)
 
@@ -150,3 +151,4 @@ DEPENDENCIES
   vlad
   vlad-git (~> 2.2.0)
   vlad-nginx (~> 1)
+  web-app-theme (>= 0.6.2)

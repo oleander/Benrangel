@@ -4,6 +4,9 @@ javascript_compressor: yui
 stylesheets:
   common:
     - public/stylesheets/vendor/*.css
+    - public/stylesheets/web-app-theme/base.css
+    - public/stylesheets/web-app-theme/override.css
+    - public/stylesheets/web-app-theme/themes/drastic-dark/style.css
 
 javascripts:
   common:

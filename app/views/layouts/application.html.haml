@@ -7,5 +7,30 @@
     = include_javascripts_using_head_js
     = csrf_meta_tag
   %body
-    .header= yield_default :header, 'shared/header'
-    .section.body= yield
+    #container
+      #header
+        %h1
+          %a{:href => "/"} Benrangel
+        #user-navigation
+          %ul.wat-cf
+            %li
+              %a{:href => "#"}= t("web-app-theme.profile", :default => "Profile")
+            %li
+              %a{:href => "#"}= t("web-app-theme.settings", :default => "Settings")
+            %li
+              %a.logout{:href => "/logout"}= t("web-app-theme.logout", :default => "Logout")
+        #main-navigation
+          %ul.wat-cf
+      #wrapper.wat-cf
+        .flash
+          - flash.each do |type, message|
+            %div{:class => "message #{type}"}
+              %p= message
+        #main
+          = yield
+          #footer
+            .block
+              %p
+                Copyright © #{Time.now.year} Benrangel.
+        #sidebar
+          = yield :sidebar
