@@ -54,6 +54,8 @@ GEM
     jammit (0.5.3)
       closure-compiler (>= 0.1.0)
       yui-compressor (>= 0.9.1)
+    jquery-rails (0.2.4)
+      rails (~> 3.0)
     mail (2.2.6.1)
       activesupport (>= 2.3.6)
       mime-types
@@ -128,6 +130,7 @@ DEPENDENCIES
   cover_me (~> 1.0.0)
   haml (~> 3.0.18)
   jammit (~> 0.5.3)
+  jquery-rails
   metaid (~> 1.0)
   rack-cache (~> 0.5.3)
   rack-rewrite (~> 1.0.0)
