@@ -20,6 +20,10 @@ group :test do
   gem 'cover_me', '~> 1.0.0', :require => false
 end
 
+# Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.
+# https://github.com/plataformatec/simple_form
+gem "simple_form"
+
 group :development do
   gem 'barista_growl'
   gem 'rspec-rails', '~> 2.0.0.beta.22'
