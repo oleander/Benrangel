@@ -36,6 +36,10 @@ module Benrangel
       r301 %r{\A/(.*)/\z}, '/$1'
     end
     
+    config.generators do |g|
+      g.template_engine :haml
+    end
+    
     # Cache handler etags/if-modified-since
     # Note: put as high as possible (but after redirects) so cache hits early
     config.middleware.insert_after(Rack::Rewrite, Rack::Cache, {
