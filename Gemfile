@@ -34,4 +34,5 @@ group :development do
   gem 'vlad'
   gem 'vlad-git', '~> 2.2.0'
   gem 'vlad-nginx', '~> 1'
+  gem 'ruby-debug'
 end
