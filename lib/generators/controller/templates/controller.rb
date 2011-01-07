@@ -21,21 +21,13 @@ class <%= class_name %>Controller < ApplicationController
 
   def create
     @<%= file_name %> = <%= file_name.titleize %>.new(params[:user])
-    
-    if @<%= file_name %>.save
-      flash[:notice] = '<%= file_name.titleize %> was successfully created.'
-    end
-    
+    flash[:notice] = '<%= file_name.titleize %> was successfully created.' if @<%= file_name %>.save
     respond_with(@<%= file_name %>)
   end
 
   def update
     @<%= file_name %> = <%= file_name.titleize %>.find(params[:id])
-
-    if @<%= file_name %>.update_attributes(params[:user])
-      flash[:notice] = '<%= file_name.titleize %> was successfully updated.'
-    end
-    
+    flash[:notice] = '<%= file_name.titleize %> was successfully updated.' if @<%= file_name %>.update_attributes(params[:user])
     respond_with(@<%= file_name %>)
   end
 
@@ -44,5 +36,4 @@ class <%= class_name %>Controller < ApplicationController
     @<%= file_name %>.destroy
     respond_with(@<%= file_name %>)
   end
-  
 end
