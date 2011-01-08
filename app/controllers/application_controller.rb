@@ -3,6 +3,9 @@ class ApplicationController < ActionController::Base
   
   helper_method :title
   
+  before_filter do
+    I18n.locale = 'sv-SE'
+  end
   # Get (and possibly set) the site title.
   #
   # @param [nil, #to_s] title (default: nil)

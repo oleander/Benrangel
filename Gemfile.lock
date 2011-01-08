@@ -40,7 +40,7 @@ GEM
     columnize (0.3.2)
     compass (0.10.5)
       haml (>= 3.0.4)
-    configatron (2.6.3)
+    configatron (2.6.4)
       yamler (>= 0.1.0)
     cover_me (1.0.0.pre4)
       configatron
@@ -135,7 +135,7 @@ DEPENDENCIES
   barista (~> 0.5.0)
   barista_growl
   compass (~> 0.10.5)
-  cover_me (~> 1.0.0)
+  cover_me (~> 1.0.0.rc5)
   haml (~> 3.0.18)
   jammit (~> 0.5.3)
   jquery-rails

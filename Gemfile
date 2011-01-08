@@ -16,9 +16,7 @@ gem 'jammit', '~> 0.5.3'
 gem 'rack-rewrite', '~> 1.0.0'
 gem 'rack-cache', '~> 0.5.3', :require => 'rack/cache'
 
-group :test do
-  gem 'cover_me', '~> 1.0.0', :require => false
-end
+gem 'cover_me', '~> 1.0.0.rc5', :group => :test
 
 # Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.
 # https://github.com/plataformatec/simple_form

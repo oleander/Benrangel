@@ -12,8 +12,7 @@ module Benrangel
     config.autoload_paths += %W(#{config.root}/my/extras)
     
     # Set default locale to Swedish and add my/locales/*.{rb,yml} to autoload.
-    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    config.i18n.default_locale = :sv_SE
+    config.i18n.default_locale = :'sv-SE'
     
     # JavaScript files you want as :defaults (application.js is always included).
     config.action_view.javascript_expansions[:defaults] = %w(http://code.jquery.com/jquery-1.4.2.min.js)
@@ -40,6 +39,8 @@ module Benrangel
       g.template_engine :haml
     end
     
+    config.time_zone = 'Stockholm'
+      
     # Cache handler etags/if-modified-since
     # Note: put as high as possible (but after redirects) so cache hits early
     config.middleware.insert_after(Rack::Rewrite, Rack::Cache, {
