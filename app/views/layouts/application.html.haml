@@ -1,6 +1,13 @@
 !!!
 %html
   %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %link{:href => "/favicon.ico", :rel => "shortcut icon"}
+    %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}
+    
     %title= title
     = javascript_include_tag 'head.0.5.min'
     = include_stylesheets :common
