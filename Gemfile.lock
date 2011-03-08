@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/oleander/ruby-yui-compressor.git
+  revision: 0bf4a2c4129f7d2c1c61f6c6ed990e454ae53ae6
+  specs:
+    yui-compressor (0.9.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -135,7 +141,6 @@ GEM
       vlad (~> 2)
     web-app-theme (0.6.3)
     yamler (0.1.0)
-    yui-compressor (0.9.4)
 
 PLATFORMS
   ruby
@@ -161,3 +166,4 @@ DEPENDENCIES
   vlad-git (~> 2.2.0)
   vlad-nginx (~> 1)
   web-app-theme (>= 0.6.2)
+  yui-compressor!

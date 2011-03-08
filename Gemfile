@@ -17,6 +17,8 @@ group :development, :test, :production do
   # Required in production for compilation rake tasks!
   gem "compass", "~> 0.10.5"
   gem "barista", "~> 0.5.0"
+  
+  gem "yui-compressor", :git => "git://github.com/oleander/ruby-yui-compressor.git", :require  => "yui/compressor"
   gem "jammit", "~> 0.5.3"
 
   # Rack stuff!
