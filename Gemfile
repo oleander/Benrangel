@@ -42,5 +42,5 @@ end
 
 group :test do
   gem "cover_me", "~> 1.0.0.rc5"
-  gem "rspec-rails", "~> 2.0.0.beta.22"
+  gem "rspec-rails", "~> 2.4"
 end
