@@ -37,6 +37,7 @@ module Benrangel
     
     config.generators do |g|
       g.template_engine :haml
+      g.test_framework :rspec
     end
     
     config.time_zone = 'Stockholm'
