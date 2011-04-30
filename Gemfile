@@ -1,10 +1,10 @@
 source "http://rubygems.org"
 
 group :development, :test, :production do
-  gem "rails", "~> 3.0.4"
+  gem "rails", "~> 3.0.7"
   gem "transitions", "~> 0.0.9", :require => ["transitions", "active_record/transitions"]
   gem "metaid", "~> 1.0"
-  gem "haml", "~> 3.0.18"
+  gem "haml"
   
   # Forms made easy for Rails! It"s tied to a simple DSL, with no opinion on markup.
   # https://github.com/plataformatec/simple_form
