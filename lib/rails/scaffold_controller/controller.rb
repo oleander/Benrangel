@@ -20,14 +20,14 @@ class <%= plural_name.titleize %>Controller < ApplicationController
   end
 
   def create
-    @<%= file_name.singularize %> = <%= file_name.singularize.titleize %>.new(params[:user])
+    @<%= file_name.singularize %> = <%= file_name.singularize.titleize %>.new(params[:<%= file_name.singularize %>])
     flash[:notice] = '<%= file_name.singularize.titleize %> was successfully created.' if @<%= file_name.singularize %>.save
     respond_with(@<%= file_name.singularize %>)
   end
 
   def update
     @<%= file_name.singularize %> = <%= file_name.singularize.titleize %>.find(params[:id])
-    flash[:notice] = '<%= file_name.singularize.titleize %> was successfully updated.' if @<%= file_name.singularize %>.update_attributes(params[:user])
+    flash[:notice] = '<%= file_name.singularize.titleize %> was successfully updated.' if @<%= file_name.singularize %>.update_attributes(params[:<%= file_name.singularize %>])
     respond_with(@<%= file_name.singularize %>)
   end
 

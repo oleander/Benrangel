@@ -7,6 +7,6 @@ Haml::Template.options.merge!({
   :attr_wrapper => '"'
 })
 
-# Sass::Plugin.options.merge!({
-#   :template_location => {"#{Rails.root}/app/stylesheets/" => "#{Rails.root}/public/stylesheets"}
-# })
+Sass::Plugin.options.merge!({
+  :template_location => {"#{Rails.root}/app/stylesheets/" => "#{Rails.root}/public/stylesheets"}
+})
